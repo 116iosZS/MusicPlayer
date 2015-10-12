@@ -1,15 +1,13 @@
 //
-//  ViewController.h
+//  ZYMusic.h
 //  ZYMusicPlayer
 //
 //  Created by 王志盼 on 15/10/12.
 //  Copyright © 2015年 王志盼. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface ViewController : UIViewController
-
+@interface ZYMusic : NSObject
 
 @end
-
