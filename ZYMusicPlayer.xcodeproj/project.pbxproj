@@ -1,0 +1,536 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		09294B141BCB8E5500110549 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 09294B131BCB8E5500110549 /* main.m */; };
+		09294B171BCB8E5500110549 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09294B161BCB8E5500110549 /* AppDelegate.m */; };
+		09294B1A1BCB8E5500110549 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09294B191BCB8E5500110549 /* ViewController.m */; };
+		09294B1D1BCB8E5500110549 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09294B1B1BCB8E5500110549 /* Main.storyboard */; };
+		09294B201BCB8E5500110549 /* ZYMusicPlayer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 09294B1E1BCB8E5500110549 /* ZYMusicPlayer.xcdatamodeld */; };
+		09294B221BCB8E5500110549 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 09294B211BCB8E5500110549 /* Assets.xcassets */; };
+		09294B251BCB8E5500110549 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 09294B231BCB8E5500110549 /* LaunchScreen.storyboard */; };
+		09294B301BCB8E5500110549 /* ZYMusicPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09294B2F1BCB8E5500110549 /* ZYMusicPlayerTests.m */; };
+		09294B3B1BCB8E5500110549 /* ZYMusicPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09294B3A1BCB8E5500110549 /* ZYMusicPlayerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		09294B2C1BCB8E5500110549 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09294B071BCB8E5500110549 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09294B0E1BCB8E5500110549;
+			remoteInfo = ZYMusicPlayer;
+		};
+		09294B371BCB8E5500110549 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 09294B071BCB8E5500110549 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 09294B0E1BCB8E5500110549;
+			remoteInfo = ZYMusicPlayer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09294B0F1BCB8E5500110549 /* ZYMusicPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZYMusicPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		09294B131BCB8E5500110549 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		09294B151BCB8E5500110549 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		09294B161BCB8E5500110549 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		09294B181BCB8E5500110549 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		09294B191BCB8E5500110549 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		09294B1C1BCB8E5500110549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		09294B1F1BCB8E5500110549 /* ZYMusicPlayer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ZYMusicPlayer.xcdatamodel; sourceTree = "<group>"; };
+		09294B211BCB8E5500110549 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		09294B241BCB8E5500110549 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		09294B261BCB8E5500110549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09294B2B1BCB8E5500110549 /* ZYMusicPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYMusicPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09294B2F1BCB8E5500110549 /* ZYMusicPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYMusicPlayerTests.m; sourceTree = "<group>"; };
+		09294B311BCB8E5500110549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		09294B361BCB8E5500110549 /* ZYMusicPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZYMusicPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		09294B3A1BCB8E5500110549 /* ZYMusicPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZYMusicPlayerUITests.m; sourceTree = "<group>"; };
+		09294B3C1BCB8E5500110549 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		09294B0C1BCB8E5500110549 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09294B281BCB8E5500110549 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09294B331BCB8E5500110549 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		09294B061BCB8E5500110549 = {
+			isa = PBXGroup;
+			children = (
+				09294B111BCB8E5500110549 /* ZYMusicPlayer */,
+				09294B2E1BCB8E5500110549 /* ZYMusicPlayerTests */,
+				09294B391BCB8E5500110549 /* ZYMusicPlayerUITests */,
+				09294B101BCB8E5500110549 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		09294B101BCB8E5500110549 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				09294B0F1BCB8E5500110549 /* ZYMusicPlayer.app */,
+				09294B2B1BCB8E5500110549 /* ZYMusicPlayerTests.xctest */,
+				09294B361BCB8E5500110549 /* ZYMusicPlayerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09294B111BCB8E5500110549 /* ZYMusicPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				09294B151BCB8E5500110549 /* AppDelegate.h */,
+				09294B161BCB8E5500110549 /* AppDelegate.m */,
+				09294B181BCB8E5500110549 /* ViewController.h */,
+				09294B191BCB8E5500110549 /* ViewController.m */,
+				09294B1B1BCB8E5500110549 /* Main.storyboard */,
+				09294B211BCB8E5500110549 /* Assets.xcassets */,
+				09294B231BCB8E5500110549 /* LaunchScreen.storyboard */,
+				09294B261BCB8E5500110549 /* Info.plist */,
+				09294B1E1BCB8E5500110549 /* ZYMusicPlayer.xcdatamodeld */,
+				09294B121BCB8E5500110549 /* Supporting Files */,
+			);
+			path = ZYMusicPlayer;
+			sourceTree = "<group>";
+		};
+		09294B121BCB8E5500110549 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				09294B131BCB8E5500110549 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		09294B2E1BCB8E5500110549 /* ZYMusicPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				09294B2F1BCB8E5500110549 /* ZYMusicPlayerTests.m */,
+				09294B311BCB8E5500110549 /* Info.plist */,
+			);
+			path = ZYMusicPlayerTests;
+			sourceTree = "<group>";
+		};
+		09294B391BCB8E5500110549 /* ZYMusicPlayerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				09294B3A1BCB8E5500110549 /* ZYMusicPlayerUITests.m */,
+				09294B3C1BCB8E5500110549 /* Info.plist */,
+			);
+			path = ZYMusicPlayerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		09294B0E1BCB8E5500110549 /* ZYMusicPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09294B3F1BCB8E5500110549 /* Build configuration list for PBXNativeTarget "ZYMusicPlayer" */;
+			buildPhases = (
+				09294B0B1BCB8E5500110549 /* Sources */,
+				09294B0C1BCB8E5500110549 /* Frameworks */,
+				09294B0D1BCB8E5500110549 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZYMusicPlayer;
+			productName = ZYMusicPlayer;
+			productReference = 09294B0F1BCB8E5500110549 /* ZYMusicPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		09294B2A1BCB8E5500110549 /* ZYMusicPlayerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09294B421BCB8E5500110549 /* Build configuration list for PBXNativeTarget "ZYMusicPlayerTests" */;
+			buildPhases = (
+				09294B271BCB8E5500110549 /* Sources */,
+				09294B281BCB8E5500110549 /* Frameworks */,
+				09294B291BCB8E5500110549 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09294B2D1BCB8E5500110549 /* PBXTargetDependency */,
+			);
+			name = ZYMusicPlayerTests;
+			productName = ZYMusicPlayerTests;
+			productReference = 09294B2B1BCB8E5500110549 /* ZYMusicPlayerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		09294B351BCB8E5500110549 /* ZYMusicPlayerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09294B451BCB8E5500110549 /* Build configuration list for PBXNativeTarget "ZYMusicPlayerUITests" */;
+			buildPhases = (
+				09294B321BCB8E5500110549 /* Sources */,
+				09294B331BCB8E5500110549 /* Frameworks */,
+				09294B341BCB8E5500110549 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				09294B381BCB8E5500110549 /* PBXTargetDependency */,
+			);
+			name = ZYMusicPlayerUITests;
+			productName = ZYMusicPlayerUITests;
+			productReference = 09294B361BCB8E5500110549 /* ZYMusicPlayerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		09294B071BCB8E5500110549 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = "王志盼";
+				TargetAttributes = {
+					09294B0E1BCB8E5500110549 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					09294B2A1BCB8E5500110549 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 09294B0E1BCB8E5500110549;
+					};
+					09294B351BCB8E5500110549 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 09294B0E1BCB8E5500110549;
+					};
+				};
+			};
+			buildConfigurationList = 09294B0A1BCB8E5500110549 /* Build configuration list for PBXProject "ZYMusicPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 09294B061BCB8E5500110549;
+			productRefGroup = 09294B101BCB8E5500110549 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				09294B0E1BCB8E5500110549 /* ZYMusicPlayer */,
+				09294B2A1BCB8E5500110549 /* ZYMusicPlayerTests */,
+				09294B351BCB8E5500110549 /* ZYMusicPlayerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		09294B0D1BCB8E5500110549 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09294B251BCB8E5500110549 /* LaunchScreen.storyboard in Resources */,
+				09294B221BCB8E5500110549 /* Assets.xcassets in Resources */,
+				09294B1D1BCB8E5500110549 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09294B291BCB8E5500110549 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09294B341BCB8E5500110549 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		09294B0B1BCB8E5500110549 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09294B1A1BCB8E5500110549 /* ViewController.m in Sources */,
+				09294B171BCB8E5500110549 /* AppDelegate.m in Sources */,
+				09294B141BCB8E5500110549 /* main.m in Sources */,
+				09294B201BCB8E5500110549 /* ZYMusicPlayer.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09294B271BCB8E5500110549 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09294B301BCB8E5500110549 /* ZYMusicPlayerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		09294B321BCB8E5500110549 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09294B3B1BCB8E5500110549 /* ZYMusicPlayerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		09294B2D1BCB8E5500110549 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09294B0E1BCB8E5500110549 /* ZYMusicPlayer */;
+			targetProxy = 09294B2C1BCB8E5500110549 /* PBXContainerItemProxy */;
+		};
+		09294B381BCB8E5500110549 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 09294B0E1BCB8E5500110549 /* ZYMusicPlayer */;
+			targetProxy = 09294B371BCB8E5500110549 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		09294B1B1BCB8E5500110549 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09294B1C1BCB8E5500110549 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		09294B231BCB8E5500110549 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				09294B241BCB8E5500110549 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		09294B3D1BCB8E5500110549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		09294B3E1BCB8E5500110549 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		09294B401BCB8E5500110549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZYMusicPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = operation11.ZYMusicPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		09294B411BCB8E5500110549 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZYMusicPlayer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = operation11.ZYMusicPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		09294B431BCB8E5500110549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZYMusicPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = operation11.ZYMusicPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYMusicPlayer.app/ZYMusicPlayer";
+			};
+			name = Debug;
+		};
+		09294B441BCB8E5500110549 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZYMusicPlayerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = operation11.ZYMusicPlayerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZYMusicPlayer.app/ZYMusicPlayer";
+			};
+			name = Release;
+		};
+		09294B461BCB8E5500110549 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZYMusicPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = operation11.ZYMusicPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZYMusicPlayer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		09294B471BCB8E5500110549 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZYMusicPlayerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = operation11.ZYMusicPlayerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZYMusicPlayer;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09294B0A1BCB8E5500110549 /* Build configuration list for PBXProject "ZYMusicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09294B3D1BCB8E5500110549 /* Debug */,
+				09294B3E1BCB8E5500110549 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		09294B3F1BCB8E5500110549 /* Build configuration list for PBXNativeTarget "ZYMusicPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09294B401BCB8E5500110549 /* Debug */,
+				09294B411BCB8E5500110549 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		09294B421BCB8E5500110549 /* Build configuration list for PBXNativeTarget "ZYMusicPlayerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09294B431BCB8E5500110549 /* Debug */,
+				09294B441BCB8E5500110549 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		09294B451BCB8E5500110549 /* Build configuration list for PBXNativeTarget "ZYMusicPlayerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				09294B461BCB8E5500110549 /* Debug */,
+				09294B471BCB8E5500110549 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		09294B1E1BCB8E5500110549 /* ZYMusicPlayer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				09294B1F1BCB8E5500110549 /* ZYMusicPlayer.xcdatamodel */,
+			);
+			currentVersion = 09294B1F1BCB8E5500110549 /* ZYMusicPlayer.xcdatamodel */;
+			path = ZYMusicPlayer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 09294B071BCB8E5500110549 /* Project object */;
+}
