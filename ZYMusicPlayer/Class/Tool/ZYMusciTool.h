@@ -8,6 +8,35 @@
 
 #import <Foundation/Foundation.h>
 
+@class ZYMusic;
 @interface ZYMusciTool : NSObject
+/**
+ *  正在播放的歌曲
+ *
+ */
++ (ZYMusic *)playingMusic;
+/**
+ *  重新设计歌曲
+ *
+ */
++ (void)setPlayingMusic:(ZYMusic *)playingMusic;
 
+/**
+ *
+ *
+ *  @return 所有歌曲
+ */
++ (NSArray *)musics;
+
+/**
+ *
+ *  下一首歌曲
+ */
++ (ZYMusic *)nextMusic;
+
+/**
+ *  上一首歌曲
+ *
+ */
++ (ZYMusic *)previousMusic;
 @end

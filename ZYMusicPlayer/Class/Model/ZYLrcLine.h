@@ -9,5 +9,12 @@
 #import <Foundation/Foundation.h>
 
 @interface ZYLrcLine : NSObject
-
+/**
+ *  时间点
+ */
+@property (nonatomic, copy) NSString *time;
+/**
+ *  词
+ */
+@property (nonatomic, copy) NSString *word;
 @end
