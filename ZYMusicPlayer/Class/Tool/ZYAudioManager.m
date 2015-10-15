@@ -91,6 +91,8 @@ static ZYAudioManager *_instance = nil;
     AVAudioPlayer *player = self.musicPlayers[filename];
     
     [player stop];
+    
+    [self.musicPlayers removeObjectForKey:filename];
 }
 
 //播放音效

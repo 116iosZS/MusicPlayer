@@ -1,5 +1,5 @@
 //
-//  ZYMusciTool.h
+//  ZYMusicTool.h
 //  ZYMusicPlayer
 //
 //  Created by 王志盼 on 15/10/12.
@@ -9,14 +9,14 @@
 #import <Foundation/Foundation.h>
 
 @class ZYMusic;
-@interface ZYMusciTool : NSObject
+@interface ZYMusicTool : NSObject
 /**
  *  正在播放的歌曲
  *
  */
 + (ZYMusic *)playingMusic;
 /**
- *  重新设计歌曲
+ *  重新设置歌曲
  *
  */
 + (void)setPlayingMusic:(ZYMusic *)playingMusic;

@@ -14,7 +14,7 @@
 		09294B3B1BCB8E5500110549 /* ZYMusicPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 09294B3A1BCB8E5500110549 /* ZYMusicPlayerUITests.m */; };
 		09294B561BCB8F0A00110549 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 09294B531BCB8F0A00110549 /* AppDelegate.m */; settings = {ASSET_TAGS = (); }; };
 		09294B591BCB90B400110549 /* ZYAudioManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 09294B581BCB90B400110549 /* ZYAudioManager.m */; settings = {ASSET_TAGS = (); }; };
-		09294B5C1BCB915C00110549 /* ZYMusciTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 09294B5B1BCB915C00110549 /* ZYMusciTool.m */; settings = {ASSET_TAGS = (); }; };
+		09294B5C1BCB915C00110549 /* ZYMusicTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 09294B5B1BCB915C00110549 /* ZYMusicTool.m */; settings = {ASSET_TAGS = (); }; };
 		09294B5F1BCB9EB700110549 /* ZYMusic.m in Sources */ = {isa = PBXBuildFile; fileRef = 09294B5E1BCB9EB700110549 /* ZYMusic.m */; settings = {ASSET_TAGS = (); }; };
 		09294B621BCB9EFE00110549 /* ZYLrcLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 09294B611BCB9EFE00110549 /* ZYLrcLine.m */; settings = {ASSET_TAGS = (); }; };
 		09294B761BCBA93C00110549 /* MJConst.m in Sources */ = {isa = PBXBuildFile; fileRef = 09294B681BCBA93C00110549 /* MJConst.m */; settings = {ASSET_TAGS = (); }; };
@@ -61,6 +61,12 @@
 		09294BC81BCBAA0600110549 /* 309769.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 09294BA31BCBAA0600110549 /* 309769.mp3 */; settings = {ASSET_TAGS = (); }; };
 		09294BC91BCBAA0600110549 /* 339744.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 09294BA41BCBAA0600110549 /* 339744.mp3 */; settings = {ASSET_TAGS = (); }; };
 		09294BCA1BCBAA0600110549 /* Musics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09294BA51BCBAA0600110549 /* Musics.plist */; settings = {ASSET_TAGS = (); }; };
+		09B020491BCCA3A20065D767 /* ZYMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B020481BCCA3A20065D767 /* ZYMusicViewController.m */; settings = {ASSET_TAGS = (); }; };
+		09B0204D1BCCA4820065D767 /* ZYPlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B0204B1BCCA4820065D767 /* ZYPlayingViewController.m */; settings = {ASSET_TAGS = (); }; };
+		09B0204E1BCCA4820065D767 /* ZYPlayingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B0204C1BCCA4820065D767 /* ZYPlayingViewController.xib */; settings = {ASSET_TAGS = (); }; };
+		09B020511BCCB15F0065D767 /* ZYImageTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B020501BCCB15F0065D767 /* ZYImageTool.m */; settings = {ASSET_TAGS = (); }; };
+		09B020551BCCB40E0065D767 /* Colours.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B020541BCCB40E0065D767 /* Colours.m */; settings = {ASSET_TAGS = (); }; };
+		09B020591BCCF0DA0065D767 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B020581BCCF0DA0065D767 /* UIView+Extension.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,8 +102,8 @@
 		09294B531BCB8F0A00110549 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		09294B571BCB90B400110549 /* ZYAudioManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYAudioManager.h; sourceTree = "<group>"; };
 		09294B581BCB90B400110549 /* ZYAudioManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYAudioManager.m; sourceTree = "<group>"; };
-		09294B5A1BCB915C00110549 /* ZYMusciTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYMusciTool.h; sourceTree = "<group>"; };
-		09294B5B1BCB915C00110549 /* ZYMusciTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYMusciTool.m; sourceTree = "<group>"; };
+		09294B5A1BCB915C00110549 /* ZYMusicTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYMusicTool.h; sourceTree = "<group>"; };
+		09294B5B1BCB915C00110549 /* ZYMusicTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYMusicTool.m; sourceTree = "<group>"; };
 		09294B5D1BCB9EB700110549 /* ZYMusic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYMusic.h; sourceTree = "<group>"; };
 		09294B5E1BCB9EB700110549 /* ZYMusic.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYMusic.m; sourceTree = "<group>"; };
 		09294B601BCB9EFE00110549 /* ZYLrcLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYLrcLine.h; sourceTree = "<group>"; };
@@ -154,6 +160,17 @@
 		09294BA31BCBAA0600110549 /* 309769.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 309769.mp3; sourceTree = "<group>"; };
 		09294BA41BCBAA0600110549 /* 339744.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 339744.mp3; sourceTree = "<group>"; };
 		09294BA51BCBAA0600110549 /* Musics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Musics.plist; sourceTree = "<group>"; };
+		09B020471BCCA3A20065D767 /* ZYMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYMusicViewController.h; sourceTree = "<group>"; };
+		09B020481BCCA3A20065D767 /* ZYMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYMusicViewController.m; sourceTree = "<group>"; };
+		09B0204A1BCCA4820065D767 /* ZYPlayingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPlayingViewController.h; sourceTree = "<group>"; };
+		09B0204B1BCCA4820065D767 /* ZYPlayingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYPlayingViewController.m; sourceTree = "<group>"; };
+		09B0204C1BCCA4820065D767 /* ZYPlayingViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZYPlayingViewController.xib; sourceTree = "<group>"; };
+		09B0204F1BCCB15F0065D767 /* ZYImageTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYImageTool.h; sourceTree = "<group>"; };
+		09B020501BCCB15F0065D767 /* ZYImageTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYImageTool.m; sourceTree = "<group>"; };
+		09B020531BCCB40E0065D767 /* Colours.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colours.h; sourceTree = "<group>"; };
+		09B020541BCCB40E0065D767 /* Colours.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colours.m; sourceTree = "<group>"; };
+		09B020571BCCF0DA0065D767 /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		09B020581BCCF0DA0065D767 /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +260,7 @@
 		09294B4E1BCB8F0A00110549 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				09B020561BCCF0DA0065D767 /* Category */,
 				09294B651BCBA92300110549 /* Library */,
 				09294B4F1BCB8F0A00110549 /* Controller */,
 				09294B501BCB8F0A00110549 /* Model */,
@@ -256,6 +274,11 @@
 		09294B4F1BCB8F0A00110549 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				09B020471BCCA3A20065D767 /* ZYMusicViewController.h */,
+				09B020481BCCA3A20065D767 /* ZYMusicViewController.m */,
+				09B0204A1BCCA4820065D767 /* ZYPlayingViewController.h */,
+				09B0204B1BCCA4820065D767 /* ZYPlayingViewController.m */,
+				09B0204C1BCCA4820065D767 /* ZYPlayingViewController.xib */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -285,8 +308,10 @@
 			children = (
 				09294B571BCB90B400110549 /* ZYAudioManager.h */,
 				09294B581BCB90B400110549 /* ZYAudioManager.m */,
-				09294B5A1BCB915C00110549 /* ZYMusciTool.h */,
-				09294B5B1BCB915C00110549 /* ZYMusciTool.m */,
+				09294B5A1BCB915C00110549 /* ZYMusicTool.h */,
+				09294B5B1BCB915C00110549 /* ZYMusicTool.m */,
+				09B0204F1BCCB15F0065D767 /* ZYImageTool.h */,
+				09B020501BCCB15F0065D767 /* ZYImageTool.m */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -301,6 +326,7 @@
 		09294B651BCBA92300110549 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				09B020521BCCB40E0065D767 /* Colours */,
 				09294B661BCBA93C00110549 /* MJExtension */,
 			);
 			path = Library;
@@ -394,6 +420,24 @@
 				09294BA41BCBAA0600110549 /* 339744.mp3 */,
 			);
 			path = MP3s;
+			sourceTree = "<group>";
+		};
+		09B020521BCCB40E0065D767 /* Colours */ = {
+			isa = PBXGroup;
+			children = (
+				09B020531BCCB40E0065D767 /* Colours.h */,
+				09B020541BCCB40E0065D767 /* Colours.m */,
+			);
+			path = Colours;
+			sourceTree = "<group>";
+		};
+		09B020561BCCF0DA0065D767 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				09B020571BCCF0DA0065D767 /* UIView+Extension.h */,
+				09B020581BCCF0DA0065D767 /* UIView+Extension.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -520,6 +564,7 @@
 				09294BBB1BCBAA0600110549 /* 12309111.lrc in Resources */,
 				09294BBC1BCBAA0600110549 /* 14945107.lrc in Resources */,
 				09294BC21BCBAA0600110549 /* 10736444.mp3 in Resources */,
+				09B0204E1BCCA4820065D767 /* ZYPlayingViewController.xib in Resources */,
 				09294BC31BCBAA0600110549 /* 120125029.mp3 in Resources */,
 				09294BA71BCBAA0600110549 /* bb_icon@2x.jpg in Resources */,
 				09294BC91BCBAA0600110549 /* 339744.mp3 in Resources */,
@@ -562,15 +607,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				09B020511BCCB15F0065D767 /* ZYImageTool.m in Sources */,
+				09B020491BCCA3A20065D767 /* ZYMusicViewController.m in Sources */,
 				09294B781BCBA93C00110549 /* MJIvar.m in Sources */,
 				09294B621BCB9EFE00110549 /* ZYLrcLine.m in Sources */,
 				09294B5F1BCB9EB700110549 /* ZYMusic.m in Sources */,
 				09294B761BCBA93C00110549 /* MJConst.m in Sources */,
+				09B020591BCCF0DA0065D767 /* UIView+Extension.m in Sources */,
 				09294B771BCBA93C00110549 /* MJFoundation.m in Sources */,
+				09B020551BCCB40E0065D767 /* Colours.m in Sources */,
 				09294B791BCBA93C00110549 /* MJType.m in Sources */,
 				09294B141BCB8E5500110549 /* main.m in Sources */,
-				09294B5C1BCB915C00110549 /* ZYMusciTool.m in Sources */,
+				09294B5C1BCB915C00110549 /* ZYMusicTool.m in Sources */,
 				09294B7A1BCBA93C00110549 /* NSObject+MJCoding.m in Sources */,
+				09B0204D1BCCA4820065D767 /* ZYPlayingViewController.m in Sources */,
 				09294B201BCB8E5500110549 /* ZYMusicPlayer.xcdatamodeld in Sources */,
 				09294B7C1BCBA93C00110549 /* NSObject+MJKeyValue.m in Sources */,
 				09294B7B1BCBA93C00110549 /* NSObject+MJIvar.m in Sources */,
@@ -782,6 +832,7 @@
 				09294B411BCB8E5500110549 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09294B421BCB8E5500110549 /* Build configuration list for PBXNativeTarget "ZYMusicPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -790,6 +841,7 @@
 				09294B441BCB8E5500110549 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		09294B451BCB8E5500110549 /* Build configuration list for PBXNativeTarget "ZYMusicPlayerUITests" */ = {
 			isa = XCConfigurationList;
@@ -798,6 +850,7 @@
 				09294B471BCB8E5500110549 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
