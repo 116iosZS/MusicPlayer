@@ -35,5 +35,53 @@
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ZYMusicPlayerTests/ZYAudioManagerTests.m"
+            timestampString = "466669634.48436"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "-testAudioManagerSingle"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[ZYAudioManagerTests testAudioManagerSingle]"
+                  moduleName = "ZYMusicPlayerTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangzhipan1/Desktop/oc%E7%A8%8B%E5%BA%8F/%E9%9F%B3%E9%A2%91%E5%A4%84%E7%90%86/ZYMusicPlayer/ZYMusicPlayerTests/ZYAudioManagerTests.m"
+                  timestampString = "466667856.661133"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "948">
+               </Location>
+               <Location
+                  shouldBeEnabled = "No"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__45-[ZYAudioManagerTests testAudioManagerSingle]_block_invoke"
+                  moduleName = "ZYMusicPlayerTests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/wangzhipan1/Desktop/oc%E7%A8%8B%E5%BA%8F/%E9%9F%B3%E9%A2%91%E5%A4%84%E7%90%86/ZYMusicPlayer/ZYMusicPlayerTests/ZYAudioManagerTests.m"
+                  timestampString = "466667856.663624"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "42"
+                  endingLineNumber = "42"
+                  offsetFromSymbolStart = "12">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

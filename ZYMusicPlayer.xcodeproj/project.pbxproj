@@ -61,6 +61,7 @@
 		09294BC81BCBAA0600110549 /* 309769.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 09294BA31BCBAA0600110549 /* 309769.mp3 */; settings = {ASSET_TAGS = (); }; };
 		09294BC91BCBAA0600110549 /* 339744.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 09294BA41BCBAA0600110549 /* 339744.mp3 */; settings = {ASSET_TAGS = (); }; };
 		09294BCA1BCBAA0600110549 /* Musics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09294BA51BCBAA0600110549 /* Musics.plist */; settings = {ASSET_TAGS = (); }; };
+		098597E51BD0C0D200937BCC /* ZYAudioManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 098597E41BD0C0D200937BCC /* ZYAudioManagerTests.m */; settings = {ASSET_TAGS = (); }; };
 		09B020491BCCA3A20065D767 /* ZYMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B020481BCCA3A20065D767 /* ZYMusicViewController.m */; settings = {ASSET_TAGS = (); }; };
 		09B0204D1BCCA4820065D767 /* ZYPlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B0204B1BCCA4820065D767 /* ZYPlayingViewController.m */; settings = {ASSET_TAGS = (); }; };
 		09B0204E1BCCA4820065D767 /* ZYPlayingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B0204C1BCCA4820065D767 /* ZYPlayingViewController.xib */; settings = {ASSET_TAGS = (); }; };
@@ -160,6 +161,7 @@
 		09294BA31BCBAA0600110549 /* 309769.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 309769.mp3; sourceTree = "<group>"; };
 		09294BA41BCBAA0600110549 /* 339744.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 339744.mp3; sourceTree = "<group>"; };
 		09294BA51BCBAA0600110549 /* Musics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Musics.plist; sourceTree = "<group>"; };
+		098597E41BD0C0D200937BCC /* ZYAudioManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYAudioManagerTests.m; sourceTree = "<group>"; };
 		09B020471BCCA3A20065D767 /* ZYMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYMusicViewController.h; sourceTree = "<group>"; };
 		09B020481BCCA3A20065D767 /* ZYMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYMusicViewController.m; sourceTree = "<group>"; };
 		09B0204A1BCCA4820065D767 /* ZYPlayingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPlayingViewController.h; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 			isa = PBXGroup;
 			children = (
 				09294B2F1BCB8E5500110549 /* ZYMusicPlayerTests.m */,
+				098597E41BD0C0D200937BCC /* ZYAudioManagerTests.m */,
 				09294B311BCB8E5500110549 /* Info.plist */,
 			);
 			path = ZYMusicPlayerTests;
@@ -634,6 +637,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				09294B301BCB8E5500110549 /* ZYMusicPlayerTests.m in Sources */,
+				098597E51BD0C0D200937BCC /* ZYAudioManagerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

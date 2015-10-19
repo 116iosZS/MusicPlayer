@@ -160,7 +160,9 @@
 }
 
 #pragma mark ----定时器处理
-
+/**
+ *  添加定时器
+ */
 - (void)addCurrentTimer
 {
     if (![self.player isPlaying]) return;
@@ -173,12 +175,18 @@
     [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
 
+/**
+ *  移除定时器
+ */
 - (void)removeCurrentTimer
 {
     [self.timer invalidate];
     self.timer = nil;
 }
 
+/**
+ *  触发定时器
+ */
 - (void)updateCurrentTimer
 {
     double temp = self.player.currentTime / self.player.duration;
@@ -188,6 +196,10 @@
 }
 
 #pragma mark ----私有方法
+/**
+ *  将时间转化为合适的字符串
+ *
+ */
 - (NSString *)stringWithTime:(NSTimeInterval)time
 {
     int minute = time / 60;
@@ -197,12 +209,19 @@
 
 
 #pragma mark ----控件方法
+/**
+ *  显示歌词或者图片
+ *
+ */
 - (IBAction)lyricOrPhoto:(UIButton *)sender {
     sender.selected = !sender.selected;
 }
 
 
-
+/**
+ *  将控制器退下
+ *
+ */
 - (IBAction)exit:(id)sender {
     
     UIWindow *windows = [UIApplication sharedApplication].keyWindow;
@@ -217,6 +236,10 @@
     }];
 }
 
+/**
+ *  拖动滑块，要做的事情
+ *
+ */
 - (IBAction)panSlider:(UIPanGestureRecognizer *)sender {
     //得到挪动距离
     CGPoint point = [sender translationInView:sender.view];
@@ -251,6 +274,10 @@
     }
 }
 
+/**
+ *  轻击progressView，使得滑块走到对应位置
+ *
+ */
 - (IBAction)tapProgressView:(UITapGestureRecognizer *)sender {
     CGPoint point = [sender locationInView:sender.view];
     
@@ -259,6 +286,10 @@
     [self updateCurrentTimer];
 }
 
+/**
+ *  播放或者暂停
+ *
+ */
 - (IBAction)playOrPause:(id)sender {
     if (self.playOrPauseButton.isSelected) {
         self.playOrPauseButton.selected = NO;
@@ -271,6 +302,10 @@
         [self removeCurrentTimer];
     }
 }
+/**
+ *  前一首
+ *
+ */
 - (IBAction)previous:(id)sender {
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     window.userInteractionEnabled = NO;
@@ -280,7 +315,10 @@
     [self startPlayingMusic];
     window.userInteractionEnabled = YES;
 }
-
+/**
+ *  下一首
+ *
+ */
 - (IBAction)next:(id)sender {
     UIWindow *window = [UIApplication sharedApplication].keyWindow;
     window.userInteractionEnabled = NO;
@@ -308,7 +346,10 @@
         self.isInterruption = YES;
     }
 }
-
+/**
+ *  打断结束，做相应的操作
+ *
+ */
 - (void)audioPlayerEndInterruption:(AVAudioPlayer *)player
 {
     if (self.isInterruption) {
