@@ -16,6 +16,19 @@
 static ZYAudioManager *_instance = nil;
 
 @implementation ZYAudioManager
+
++ (void)initialize
+{
+    // 音频会话
+    AVAudioSession *session = [AVAudioSession sharedInstance];
+    
+    // 设置会话类型（播放类型、播放模式,会自动停止其他音乐的播放）
+    [session setCategory:AVAudioSessionCategorySoloAmbient error:nil];
+    
+    // 激活会话
+    [session setActive:YES error:nil];
+}
+
 + (instancetype)defaultManager
 {
     static dispatch_once_t onceToken;

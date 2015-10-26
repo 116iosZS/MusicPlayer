@@ -34,13 +34,5 @@
  */
 @property (copy, nonatomic) NSString *singerIcon;
 
-/**
- *  歌曲url
- */
-@property (copy, nonatomic) NSString *songUrlStr;
-
-/**
- *  歌词url
- */
-@property (copy, nonatomic) NSString *lyricUrlStr;
+@property (assign, nonatomic, getter = isPlaying) BOOL playing;
 @end

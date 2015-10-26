@@ -10,10 +10,12 @@
 #import "ZYPlayingViewController.h"
 #import "ZYMusicTool.h"
 #import "ZYMusic.h"
-#import "ZYImageTool.h"
-#import "Colours.h"
+#import "ZYMusicCell.h"
+
 @interface ZYMusicViewController ()
 @property (nonatomic, strong) ZYPlayingViewController *playingVc;
+
+@property (nonatomic, assign) int currentIndex;
 @end
 
 @implementation ZYMusicViewController
@@ -49,15 +51,8 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *identifie = @"MusicCell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identifie];
-    if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:identifie];
-    }
-    ZYMusic *music = [ZYMusicTool musics][indexPath.row];
-    cell.textLabel.text = music.name;
-    cell.detailTextLabel.text = music.singer;
-    cell.imageView.image = [ZYImageTool circleImageWithName:music.singerIcon borderWidth:2.0 borderColor:[UIColor pinkColor]] ;
+    ZYMusicCell *cell = [ZYMusicCell musicCellWithTableView:tableView];
+    cell.music = [ZYMusicTool musics][indexPath.row];
     return cell;
 }
 
@@ -72,6 +67,18 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     [ZYMusicTool setPlayingMusic:[ZYMusicTool musics][indexPath.row]];
+    
+    ZYMusic *preMusic = [ZYMusicTool musics][self.currentIndex];
+    preMusic.playing = NO;
+    ZYMusic *music = [ZYMusicTool musics][indexPath.row];
+    music.playing = YES;
+    NSArray *indexPaths = @[
+                            [NSIndexPath indexPathForItem:self.currentIndex inSection:0],
+                            indexPath
+                            ];
+    [self.tableView reloadRowsAtIndexPaths:indexPaths withRowAnimation:UITableViewRowAnimationNone];
+    
+    self.currentIndex = (int)indexPath.row;
     
     [self.playingVc show];
 }

@@ -12,15 +12,26 @@
 #import <AVFoundation/AVFoundation.h>
 #import "ZYMusicTool.h"
 #import "ZYAudioManager.h"
+#import "ZYLrcView.h"
+#import "UIView+AutoLayout.h"
 @interface ZYPlayingViewController ()  <AVAudioPlayerDelegate>
 
 @property (nonatomic, strong) ZYMusic *playingMusic;
 @property (nonatomic, strong) AVAudioPlayer *player;
+/**
+ *  显示播放进度条的定时器
+ */
 @property (nonatomic, strong) NSTimer *timer;
+/**
+ *  显示歌词的定时器
+ */
+@property (nonatomic, strong) CADisplayLink *lrcTimer;
 /**
  *  判断歌曲播放过程中是否被电话等打断播放
  */
 @property (nonatomic, assign) BOOL isInterruption;
+
+@property (nonatomic, weak) ZYLrcView *lrcView;
 /**
  *  歌手图片
  */
@@ -53,6 +64,13 @@
  *  滑块上面显示当前时间的label
  */
 @property (weak, nonatomic) IBOutlet UIButton *showProgressLabel;
+
+@property (weak, nonatomic) IBOutlet UIView *bottomView;
+@property (weak, nonatomic) IBOutlet UIView *topView;
+
+@property (weak, nonatomic) IBOutlet UIButton *exitBtn;
+@property (weak, nonatomic) IBOutlet UIButton *lyricOrPhotoBtn;
+
 
 
 /**
@@ -93,6 +111,21 @@
     
     [self.slider setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     self.slider.font = [UIFont systemFontOfSize:12];
+    [self setupLrcView];
+    
+}
+
+#pragma mark ----setup系列方法
+
+- (void)setupLrcView
+{
+    ZYLrcView *lrcView = [[ZYLrcView alloc] init];
+    self.lrcView = lrcView;
+    lrcView.hidden = YES;
+    [self.topView addSubview:lrcView];
+    [lrcView autoPinEdgesToSuperviewEdgesWithInsets:UIEdgeInsetsMake(0, 0, - 50, 0)];
+    [self.topView insertSubview:self.exitBtn aboveSubview:lrcView];
+    [self.topView insertSubview:self.lyricOrPhotoBtn aboveSubview:lrcView];
 }
 
 - (void)show
@@ -108,7 +141,7 @@
     }
     
     windows.userInteractionEnabled = NO;         //以免在动画过程中用户多次点击，或者造成其他事件的发生
-    [UIView animateWithDuration:1 animations:^{
+    [UIView animateWithDuration:0.25 animations:^{
         self.view.y = 0;
     }completion:^(BOOL finished) {
         windows.userInteractionEnabled = YES;
@@ -133,7 +166,12 @@
     [[ZYAudioManager defaultManager] stopMusic:self.playingMusic.filename];
     self.player = nil;
     
+    //清空歌词
+    self.lrcView.fileName = @"";
+    self.lrcView.currentTime = 0;
+    
     [self removeCurrentTimer];
+    [self removeLrcTimer];
 }
 
 //开始播放音乐
@@ -141,6 +179,7 @@
 {
     if (self.playingMusic == [ZYMusicTool playingMusic])  {
         [self addCurrentTimer];
+        [self addLrcTimer];
         return;
     }
     
@@ -157,9 +196,13 @@
     self.timeLabel.text = [self stringWithTime:self.player.duration];
     
     [self addCurrentTimer];
+    [self addLrcTimer];
+    //切换歌词
+    self.lrcView.fileName = self.playingMusic.lrcname;
+    self.playOrPauseButton.selected = YES;
 }
 
-#pragma mark ----定时器处理
+#pragma mark ----进度条定时器处理
 /**
  *  添加定时器
  */
@@ -195,6 +238,35 @@
     self.progressView.width = self.slider.center.x;
 }
 
+#pragma mark ----歌词定时器
+
+- (void)addLrcTimer
+{
+    if (self.lrcView.hidden == YES) return;
+    
+    if (self.player.isPlaying == NO && self.lrcTimer) {
+        [self updateLrcTimer];
+        return;
+    }
+    
+    [self removeLrcTimer];
+    
+    [self updateLrcTimer];
+    
+    self.lrcTimer = [CADisplayLink displayLinkWithTarget:self selector:@selector(updateLrcTimer)];
+    [self.lrcTimer addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
+}
+
+- (void)removeLrcTimer
+{
+    [self.lrcTimer invalidate];
+    self.lrcTimer = nil;
+}
+
+- (void)updateLrcTimer
+{
+    self.lrcView.currentTime = self.player.currentTime;
+}
 #pragma mark ----私有方法
 /**
  *  将时间转化为合适的字符串
@@ -214,7 +286,17 @@
  *
  */
 - (IBAction)lyricOrPhoto:(UIButton *)sender {
-    sender.selected = !sender.selected;
+    if (self.lrcView.isHidden) { // 显示歌词，盖住图片
+        self.lrcView.hidden = NO;
+        sender.selected = YES;
+        
+        [self addLrcTimer];
+    } else { // 隐藏歌词，显示图片
+        self.lrcView.hidden = YES;
+        sender.selected = NO;
+        
+        [self removeLrcTimer];
+    }
 }
 
 
@@ -227,11 +309,12 @@
     UIWindow *windows = [UIApplication sharedApplication].keyWindow;
     windows.userInteractionEnabled = NO;
     
-    [UIView animateWithDuration:1 animations:^{
+    [UIView animateWithDuration:0.25 animations:^{
         self.view.y = self.view.height;
     }completion:^(BOOL finished) {
         self.view.hidden = YES;            //view看不到了，将之隐藏掉，可以减少性能的消耗
         [self removeCurrentTimer];
+        [self removeLrcTimer];
         windows.userInteractionEnabled = YES;
     }];
 }
@@ -263,6 +346,7 @@
     
     if (sender.state == UIGestureRecognizerStateBegan) {
         [self removeCurrentTimer];
+        [self removeLrcTimer];
         self.showProgressLabel.hidden = NO;
         self.showProgressLabel.y = self.showProgressLabel.superview.height - 15 - self.showProgressLabel.height;
     }
@@ -270,6 +354,7 @@
     {
         self.player.currentTime = time ;
         [self addCurrentTimer];
+        [self addLrcTimer];
         self.showProgressLabel.hidden = YES;
     }
 }
@@ -284,6 +369,7 @@
     self.player.currentTime = (point.x / sender.view.width) * self.player.duration;
     
     [self updateCurrentTimer];
+    [self updateLrcTimer];
 }
 
 /**
@@ -291,15 +377,17 @@
  *
  */
 - (IBAction)playOrPause:(id)sender {
-    if (self.playOrPauseButton.isSelected) {
-        self.playOrPauseButton.selected = NO;
+    if (self.playOrPauseButton.isSelected == NO) {
+        self.playOrPauseButton.selected = YES;
         [[ZYAudioManager defaultManager] playingMusic:self.playingMusic.filename];
         [self addCurrentTimer];
+        [self addLrcTimer];
     }
     else{
-        self.playOrPauseButton.selected = YES;
+        self.playOrPauseButton.selected = NO;
         [[ZYAudioManager defaultManager] pauseMusic:self.playingMusic.filename];
         [self removeCurrentTimer];
+        [self removeLrcTimer];
     }
 }
 /**
@@ -312,6 +400,7 @@
     [[ZYAudioManager defaultManager] stopMusic:self.playingMusic.filename];
     [ZYMusicTool setPlayingMusic:[ZYMusicTool previousMusic]];
     [self removeCurrentTimer];
+    [self removeLrcTimer];
     [self startPlayingMusic];
     window.userInteractionEnabled = YES;
 }
@@ -325,6 +414,7 @@
     [[ZYAudioManager defaultManager] stopMusic:self.playingMusic.filename];
     [ZYMusicTool setPlayingMusic:[ZYMusicTool nextMusic]];
     [self removeCurrentTimer];
+    [self removeLrcTimer];
     [self startPlayingMusic];
     window.userInteractionEnabled = YES;
 }

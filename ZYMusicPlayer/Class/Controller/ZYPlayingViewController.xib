@@ -6,7 +6,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZYPlayingViewController">
             <connections>
+                <outlet property="bottomView" destination="3dw-Ib-Yb5" id="JXb-Eo-9iS"/>
+                <outlet property="exitBtn" destination="RhU-y1-h35" id="N0u-ft-pTg"/>
                 <outlet property="iconView" destination="kTN-0G-jAp" id="LY2-wB-fNe"/>
+                <outlet property="lyricOrPhotoBtn" destination="M9S-UK-aJL" id="WSb-JR-osK"/>
                 <outlet property="playOrPauseButton" destination="zUc-Mb-xas" id="fnp-yp-b1Q"/>
                 <outlet property="progressView" destination="8u3-o9-rgL" id="fDZ-yg-WDN"/>
                 <outlet property="showProgressLabel" destination="rR8-qy-Fkh" id="j5e-8j-imG"/>
@@ -14,6 +17,7 @@
                 <outlet property="slider" destination="Wv4-RF-pxd" id="Isd-I1-4CE"/>
                 <outlet property="songLabel" destination="AMa-yU-FU4" id="s2o-2L-jHC"/>
                 <outlet property="timeLabel" destination="dUB-Mu-OAm" id="ydX-a9-L3F"/>
+                <outlet property="topView" destination="M4u-b5-UNB" id="zc3-an-uUl"/>
                 <outlet property="view" destination="zUd-ke-3Bo" id="SCo-gm-bDa"/>
             </connections>
         </placeholder>
@@ -96,10 +100,6 @@
                                 <action selector="lyricOrPhoto:" destination="-1" eventType="touchUpInside" id="ROy-nq-nPB"/>
                             </connections>
                         </button>
-                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cxW-0p-6eo" userLabel="歌词显示控件">
-                            <rect key="frame" x="0.0" y="0.0" width="320" height="390"/>
-                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        </view>
                     </subviews>
                     <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
@@ -108,13 +108,9 @@
                         <constraint firstAttribute="trailing" secondItem="M9S-UK-aJL" secondAttribute="trailing" constant="10" id="OqD-sf-O3m"/>
                         <constraint firstItem="XNT-sE-pMW" firstAttribute="leading" secondItem="M4u-b5-UNB" secondAttribute="leading" id="VGx-hJ-7bl"/>
                         <constraint firstItem="RhU-y1-h35" firstAttribute="top" secondItem="M4u-b5-UNB" secondAttribute="top" constant="30" id="Yah-wK-UXY"/>
-                        <constraint firstAttribute="bottom" secondItem="cxW-0p-6eo" secondAttribute="bottom" id="b5n-08-bIP"/>
-                        <constraint firstAttribute="trailing" secondItem="cxW-0p-6eo" secondAttribute="trailing" id="bsb-xj-f97"/>
                         <constraint firstAttribute="bottom" secondItem="XNT-sE-pMW" secondAttribute="bottom" id="f3w-lQ-E3I"/>
                         <constraint firstAttribute="bottom" secondItem="kTN-0G-jAp" secondAttribute="bottom" id="fiG-5H-LpZ"/>
                         <constraint firstItem="M9S-UK-aJL" firstAttribute="top" secondItem="M4u-b5-UNB" secondAttribute="top" constant="30" id="kC4-MD-Xks"/>
-                        <constraint firstItem="cxW-0p-6eo" firstAttribute="leading" secondItem="M4u-b5-UNB" secondAttribute="leading" id="kJn-Hx-BUY"/>
-                        <constraint firstItem="cxW-0p-6eo" firstAttribute="top" secondItem="M4u-b5-UNB" secondAttribute="top" id="mBa-nb-6b7"/>
                         <constraint firstAttribute="trailing" secondItem="XNT-sE-pMW" secondAttribute="trailing" id="nzR-Sj-aZs"/>
                         <constraint firstItem="kTN-0G-jAp" firstAttribute="top" secondItem="M4u-b5-UNB" secondAttribute="top" id="prg-AK-Sev"/>
                         <constraint firstAttribute="trailing" secondItem="kTN-0G-jAp" secondAttribute="trailing" id="zWA-pG-g8J"/>

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
+@class ZYMusic;
 @interface ZYLrcLine : NSObject
 /**
  *  时间点
@@ -17,4 +18,9 @@
  *  词
  */
 @property (nonatomic, copy) NSString *word;
+/**
+ *  返回所有的歌词model
+ *
+ */
++ (NSMutableArray *)lrcLinesWithFileName:(NSString *)fileName;
 @end

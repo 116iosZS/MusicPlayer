@@ -62,6 +62,12 @@
 		09294BC91BCBAA0600110549 /* 339744.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 09294BA41BCBAA0600110549 /* 339744.mp3 */; settings = {ASSET_TAGS = (); }; };
 		09294BCA1BCBAA0600110549 /* Musics.plist in Resources */ = {isa = PBXBuildFile; fileRef = 09294BA51BCBAA0600110549 /* Musics.plist */; settings = {ASSET_TAGS = (); }; };
 		098597E51BD0C0D200937BCC /* ZYAudioManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 098597E41BD0C0D200937BCC /* ZYAudioManagerTests.m */; settings = {ASSET_TAGS = (); }; };
+		09AC632F1BDB531E005C0808 /* ZYLrcView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AC632E1BDB531E005C0808 /* ZYLrcView.m */; settings = {ASSET_TAGS = (); }; };
+		09AC633E1BDB53F4005C0808 /* DRNRealTimeBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AC633B1BDB53F4005C0808 /* DRNRealTimeBlurView.m */; settings = {ASSET_TAGS = (); }; };
+		09AC633F1BDB53F4005C0808 /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AC633D1BDB53F4005C0808 /* UIImage+BoxBlur.m */; settings = {ASSET_TAGS = (); }; };
+		09AC63421BDB7C96005C0808 /* ZYLrcCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AC63411BDB7C96005C0808 /* ZYLrcCell.m */; settings = {ASSET_TAGS = (); }; };
+		09AC63451BDCAAB9005C0808 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AC63441BDCAAB9005C0808 /* UIView+AutoLayout.m */; settings = {ASSET_TAGS = (); }; };
+		09AC63481BDCB2A0005C0808 /* ZYMusicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AC63471BDCB2A0005C0808 /* ZYMusicCell.m */; settings = {ASSET_TAGS = (); }; };
 		09B020491BCCA3A20065D767 /* ZYMusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B020481BCCA3A20065D767 /* ZYMusicViewController.m */; settings = {ASSET_TAGS = (); }; };
 		09B0204D1BCCA4820065D767 /* ZYPlayingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 09B0204B1BCCA4820065D767 /* ZYPlayingViewController.m */; settings = {ASSET_TAGS = (); }; };
 		09B0204E1BCCA4820065D767 /* ZYPlayingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 09B0204C1BCCA4820065D767 /* ZYPlayingViewController.xib */; settings = {ASSET_TAGS = (); }; };
@@ -162,6 +168,18 @@
 		09294BA41BCBAA0600110549 /* 339744.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 339744.mp3; sourceTree = "<group>"; };
 		09294BA51BCBAA0600110549 /* Musics.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Musics.plist; sourceTree = "<group>"; };
 		098597E41BD0C0D200937BCC /* ZYAudioManagerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYAudioManagerTests.m; sourceTree = "<group>"; };
+		09AC632D1BDB531E005C0808 /* ZYLrcView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYLrcView.h; sourceTree = "<group>"; };
+		09AC632E1BDB531E005C0808 /* ZYLrcView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYLrcView.m; sourceTree = "<group>"; };
+		09AC633A1BDB53F4005C0808 /* DRNRealTimeBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRNRealTimeBlurView.h; sourceTree = "<group>"; };
+		09AC633B1BDB53F4005C0808 /* DRNRealTimeBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRNRealTimeBlurView.m; sourceTree = "<group>"; };
+		09AC633C1BDB53F4005C0808 /* UIImage+BoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BoxBlur.h"; sourceTree = "<group>"; };
+		09AC633D1BDB53F4005C0808 /* UIImage+BoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BoxBlur.m"; sourceTree = "<group>"; };
+		09AC63401BDB7C96005C0808 /* ZYLrcCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYLrcCell.h; sourceTree = "<group>"; };
+		09AC63411BDB7C96005C0808 /* ZYLrcCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYLrcCell.m; sourceTree = "<group>"; };
+		09AC63431BDCAAB9005C0808 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
+		09AC63441BDCAAB9005C0808 /* UIView+AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+AutoLayout.m"; sourceTree = "<group>"; };
+		09AC63461BDCB2A0005C0808 /* ZYMusicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYMusicCell.h; sourceTree = "<group>"; };
+		09AC63471BDCB2A0005C0808 /* ZYMusicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYMusicCell.m; sourceTree = "<group>"; };
 		09B020471BCCA3A20065D767 /* ZYMusicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYMusicViewController.h; sourceTree = "<group>"; };
 		09B020481BCCA3A20065D767 /* ZYMusicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYMusicViewController.m; sourceTree = "<group>"; };
 		09B0204A1BCCA4820065D767 /* ZYPlayingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYPlayingViewController.h; sourceTree = "<group>"; };
@@ -322,6 +340,12 @@
 		09294B551BCB8F0A00110549 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				09AC632D1BDB531E005C0808 /* ZYLrcView.h */,
+				09AC632E1BDB531E005C0808 /* ZYLrcView.m */,
+				09AC63401BDB7C96005C0808 /* ZYLrcCell.h */,
+				09AC63411BDB7C96005C0808 /* ZYLrcCell.m */,
+				09AC63461BDCB2A0005C0808 /* ZYMusicCell.h */,
+				09AC63471BDCB2A0005C0808 /* ZYMusicCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -329,6 +353,7 @@
 		09294B651BCBA92300110549 /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				09AC63391BDB53F4005C0808 /* DRNRealTimeBlurView */,
 				09B020521BCCB40E0065D767 /* Colours */,
 				09294B661BCBA93C00110549 /* MJExtension */,
 			);
@@ -425,6 +450,17 @@
 			path = MP3s;
 			sourceTree = "<group>";
 		};
+		09AC63391BDB53F4005C0808 /* DRNRealTimeBlurView */ = {
+			isa = PBXGroup;
+			children = (
+				09AC633A1BDB53F4005C0808 /* DRNRealTimeBlurView.h */,
+				09AC633B1BDB53F4005C0808 /* DRNRealTimeBlurView.m */,
+				09AC633C1BDB53F4005C0808 /* UIImage+BoxBlur.h */,
+				09AC633D1BDB53F4005C0808 /* UIImage+BoxBlur.m */,
+			);
+			path = DRNRealTimeBlurView;
+			sourceTree = "<group>";
+		};
 		09B020521BCCB40E0065D767 /* Colours */ = {
 			isa = PBXGroup;
 			children = (
@@ -437,6 +473,8 @@
 		09B020561BCCF0DA0065D767 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				09AC63431BDCAAB9005C0808 /* UIView+AutoLayout.h */,
+				09AC63441BDCAAB9005C0808 /* UIView+AutoLayout.m */,
 				09B020571BCCF0DA0065D767 /* UIView+Extension.h */,
 				09B020581BCCF0DA0065D767 /* UIView+Extension.m */,
 			);
@@ -611,9 +649,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				09B020511BCCB15F0065D767 /* ZYImageTool.m in Sources */,
+				09AC63451BDCAAB9005C0808 /* UIView+AutoLayout.m in Sources */,
+				09AC632F1BDB531E005C0808 /* ZYLrcView.m in Sources */,
 				09B020491BCCA3A20065D767 /* ZYMusicViewController.m in Sources */,
 				09294B781BCBA93C00110549 /* MJIvar.m in Sources */,
 				09294B621BCB9EFE00110549 /* ZYLrcLine.m in Sources */,
+				09AC63481BDCB2A0005C0808 /* ZYMusicCell.m in Sources */,
 				09294B5F1BCB9EB700110549 /* ZYMusic.m in Sources */,
 				09294B761BCBA93C00110549 /* MJConst.m in Sources */,
 				09B020591BCCF0DA0065D767 /* UIView+Extension.m in Sources */,
@@ -626,8 +667,11 @@
 				09B0204D1BCCA4820065D767 /* ZYPlayingViewController.m in Sources */,
 				09294B201BCB8E5500110549 /* ZYMusicPlayer.xcdatamodeld in Sources */,
 				09294B7C1BCBA93C00110549 /* NSObject+MJKeyValue.m in Sources */,
+				09AC633E1BDB53F4005C0808 /* DRNRealTimeBlurView.m in Sources */,
 				09294B7B1BCBA93C00110549 /* NSObject+MJIvar.m in Sources */,
+				09AC63421BDB7C96005C0808 /* ZYLrcCell.m in Sources */,
 				09294B561BCB8F0A00110549 /* AppDelegate.m in Sources */,
+				09AC633F1BDB53F4005C0808 /* UIImage+BoxBlur.m in Sources */,
 				09294B591BCB90B400110549 /* ZYAudioManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
