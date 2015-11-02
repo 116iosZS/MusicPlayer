@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "DRNRealTimeBlurView.h"
 
-@interface ZYLrcView : DRNRealTimeBlurView
+@interface ZYLrcView : UIImageView
 @property (nonatomic, assign) NSTimeInterval currentTime;
 @property (nonatomic, copy) NSString *fileName;
 @end

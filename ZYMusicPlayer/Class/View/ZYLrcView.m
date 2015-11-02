@@ -101,6 +101,10 @@
 
 - (void)commitInit
 {
+    self.userInteractionEnabled = YES;
+    self.image = [UIImage imageNamed:@"28131977_1383101943208"];
+    self.contentMode = UIViewContentModeScaleToFill;
+    self.clipsToBounds = YES;
     UITableView *tableView = [[UITableView alloc] init];
     tableView.delegate = self;
     tableView.dataSource = self;

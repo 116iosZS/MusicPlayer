@@ -26,6 +26,7 @@
     
     self.window.rootViewController = naVc;
     
+    
     return YES;
 }
 
@@ -35,8 +36,12 @@
  */
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     UIBackgroundTaskIdentifier taskID = [application beginBackgroundTaskWithExpirationHandler:^{
-        [application endBackgroundTask:taskID];
+    
     }];
+    
+    if (taskID != UIBackgroundTaskInvalid) {
+        [[UIApplication sharedApplication] endBackgroundTask:taskID];
+    }
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {

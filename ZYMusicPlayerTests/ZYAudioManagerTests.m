@@ -38,31 +38,42 @@ static NSString *_fileName = @"10405520.mp3";
 {
     NSMutableArray *managers = [NSMutableArray array];
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_group_t group = dispatch_group_create();
+    
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         ZYAudioManager *tempManager = [[ZYAudioManager alloc] init];
         [managers addObject:tempManager];
     });
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
         ZYAudioManager *tempManager = [[ZYAudioManager alloc] init];
         [managers addObject:tempManager];
     });
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        ZYAudioManager *tempManager = [ZYAudioManager defaultManager];
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        ZYAudioManager *tempManager = [[ZYAudioManager alloc] init];
         [managers addObject:tempManager];
     });
     
-    dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
-        ZYAudioManager *tempManager = [ZYAudioManager defaultManager];
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        ZYAudioManager *tempManager = [[ZYAudioManager alloc] init];
+        [managers addObject:tempManager];
+    });
+    
+    dispatch_group_async(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        ZYAudioManager *tempManager = [[ZYAudioManager alloc] init];
         [managers addObject:tempManager];
     });
     
     ZYAudioManager *managerOne = [ZYAudioManager defaultManager];
     
-    [managers enumerateObjectsUsingBlock:^(ZYAudioManager *obj, NSUInteger idx, BOOL * _Nonnull stop) {
-        XCTAssertEqual(managerOne, obj, @"ZYAudioManager is not single");
-    }];
+    dispatch_group_notify(group, dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
+        
+        [managers enumerateObjectsUsingBlock:^(ZYAudioManager *obj, NSUInteger idx, BOOL * _Nonnull stop) {
+            XCTAssertEqual(managerOne, obj, @"ZYAudioManager is not single");
+        }];
+        
+    });
 }
 
 /**

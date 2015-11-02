@@ -23,7 +23,7 @@ static ZYAudioManager *_instance = nil;
     AVAudioSession *session = [AVAudioSession sharedInstance];
     
     // 设置会话类型（播放类型、播放模式,会自动停止其他音乐的播放）
-    [session setCategory:AVAudioSessionCategorySoloAmbient error:nil];
+    [session setCategory:AVAudioSessionCategoryPlayback error:nil];
     
     // 激活会话
     [session setActive:YES error:nil];
