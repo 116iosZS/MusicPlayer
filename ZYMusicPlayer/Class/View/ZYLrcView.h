@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DRNRealTimeBlurView.h"
 
 @interface ZYLrcView : UIImageView
 @property (nonatomic, assign) NSTimeInterval currentTime;

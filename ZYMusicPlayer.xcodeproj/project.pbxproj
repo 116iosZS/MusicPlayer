@@ -64,8 +64,6 @@
 		098597E51BD0C0D200937BCC /* ZYAudioManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 098597E41BD0C0D200937BCC /* ZYAudioManagerTests.m */; };
 		098D20EF1BE1D287002F9690 /* ZYLrcLineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 098D20EE1BE1D287002F9690 /* ZYLrcLineTests.m */; };
 		09AC632F1BDB531E005C0808 /* ZYLrcView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AC632E1BDB531E005C0808 /* ZYLrcView.m */; };
-		09AC633E1BDB53F4005C0808 /* DRNRealTimeBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AC633B1BDB53F4005C0808 /* DRNRealTimeBlurView.m */; };
-		09AC633F1BDB53F4005C0808 /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AC633D1BDB53F4005C0808 /* UIImage+BoxBlur.m */; };
 		09AC63421BDB7C96005C0808 /* ZYLrcCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AC63411BDB7C96005C0808 /* ZYLrcCell.m */; };
 		09AC63451BDCAAB9005C0808 /* UIView+AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AC63441BDCAAB9005C0808 /* UIView+AutoLayout.m */; };
 		09AC63481BDCB2A0005C0808 /* ZYMusicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 09AC63471BDCB2A0005C0808 /* ZYMusicCell.m */; };
@@ -172,10 +170,6 @@
 		098D20EE1BE1D287002F9690 /* ZYLrcLineTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYLrcLineTests.m; sourceTree = "<group>"; };
 		09AC632D1BDB531E005C0808 /* ZYLrcView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYLrcView.h; sourceTree = "<group>"; };
 		09AC632E1BDB531E005C0808 /* ZYLrcView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYLrcView.m; sourceTree = "<group>"; };
-		09AC633A1BDB53F4005C0808 /* DRNRealTimeBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DRNRealTimeBlurView.h; sourceTree = "<group>"; };
-		09AC633B1BDB53F4005C0808 /* DRNRealTimeBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DRNRealTimeBlurView.m; sourceTree = "<group>"; };
-		09AC633C1BDB53F4005C0808 /* UIImage+BoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BoxBlur.h"; sourceTree = "<group>"; };
-		09AC633D1BDB53F4005C0808 /* UIImage+BoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BoxBlur.m"; sourceTree = "<group>"; };
 		09AC63401BDB7C96005C0808 /* ZYLrcCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZYLrcCell.h; sourceTree = "<group>"; };
 		09AC63411BDB7C96005C0808 /* ZYLrcCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZYLrcCell.m; sourceTree = "<group>"; };
 		09AC63431BDCAAB9005C0808 /* UIView+AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+AutoLayout.h"; sourceTree = "<group>"; };
@@ -356,7 +350,6 @@
 		09294B651BCBA92300110549 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				09AC63391BDB53F4005C0808 /* DRNRealTimeBlurView */,
 				09B020521BCCB40E0065D767 /* Colours */,
 				09294B661BCBA93C00110549 /* MJExtension */,
 			);
@@ -451,17 +444,6 @@
 				09294BA41BCBAA0600110549 /* 339744.mp3 */,
 			);
 			path = MP3s;
-			sourceTree = "<group>";
-		};
-		09AC63391BDB53F4005C0808 /* DRNRealTimeBlurView */ = {
-			isa = PBXGroup;
-			children = (
-				09AC633A1BDB53F4005C0808 /* DRNRealTimeBlurView.h */,
-				09AC633B1BDB53F4005C0808 /* DRNRealTimeBlurView.m */,
-				09AC633C1BDB53F4005C0808 /* UIImage+BoxBlur.h */,
-				09AC633D1BDB53F4005C0808 /* UIImage+BoxBlur.m */,
-			);
-			path = DRNRealTimeBlurView;
 			sourceTree = "<group>";
 		};
 		09B020521BCCB40E0065D767 /* Colours */ = {
@@ -671,11 +653,9 @@
 				09B0204D1BCCA4820065D767 /* ZYPlayingViewController.m in Sources */,
 				09294B201BCB8E5500110549 /* ZYMusicPlayer.xcdatamodeld in Sources */,
 				09294B7C1BCBA93C00110549 /* NSObject+MJKeyValue.m in Sources */,
-				09AC633E1BDB53F4005C0808 /* DRNRealTimeBlurView.m in Sources */,
 				09294B7B1BCBA93C00110549 /* NSObject+MJIvar.m in Sources */,
 				09AC63421BDB7C96005C0808 /* ZYLrcCell.m in Sources */,
 				09294B561BCB8F0A00110549 /* AppDelegate.m in Sources */,
-				09AC633F1BDB53F4005C0808 /* UIImage+BoxBlur.m in Sources */,
 				09294B591BCB90B400110549 /* ZYAudioManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
